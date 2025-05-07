@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Event Management</title>
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./img/logo 1.png" type="image/svg+xml">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar Section start here -->  
+<nav class="navbar navbar-expand-lg bg-pink">
+    <div class="container">
+    
+      <a class="navbar-brand" href="index.html">
+        <!-- <i class="fa-solid fa-utensils"></i> -->
+        <img src="./img/logo 1.png" alt="" width="50" height="50"></a>
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="Contact us.html">Contact Us</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="FAQ.html" target="_blank"><b>FAQ</b></a>
+          </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+    <p id="displayTime"></p>
+  </nav>
+ 
+  <!--End navbar-->
+
+<!--FAQ Section-->
+<!--FAQ Section-->
+<h1 class="team-h1">FAQ</h1>
+<br>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i> What services do you offer?</button>
+
+<div class="content">
+    <p>We provide stage decoration, catering, photography, gate design, and more.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i> How many days in advance should I book?</button>
+
+<div class="content">
+    <p>Usually, booking 7-15 days in advance is recommended for better service.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>What are the payment options?</button>
+
+<div class="content">
+    <p>
+      You can pay via bKash, Nagad, or bank transfer.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i> Do you provide wedding photography services?</button>
+
+<div class="content">
+    <p>Yes, we have a professional photography team available.</p>
+</div>
+
+<button class="collapsible"><i class="far fa-lightbulb"></i>Do you offer custom packages?</button>
+
+<div class="content">
+    <p>Yes, we create custom packages based on client requirements.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!--Footer-->
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About Us</h4>
+      <p>We provide quality products and top-notch services to our customers worldwide.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About us.html">About</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+        <li><a href="FAQ.html">Faq</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City</li>
+        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+        <li><i class="fas fa-envelope"></i> info@example.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 HR Event Management. All rights reserved Rifat-Hasan.
+  </div>
+</footer>
+  
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function(){
+          this.classList.toggle("activefaq");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+              content.style.maxHeight = null;
+          } else{
+              content.style.maxHeight = content.scrollHeight + "px"
+          }
+      });
+  }
+</script>
